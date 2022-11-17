@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:  var(--bg-color);
+  
+}
+
+:root {
+  --primary-color: #363853;
+  --secondary-color: rgba(249, 249, 250, 0.14);
+  --third-color:#7183F1;
+  --font-color: #424242;
+  --bg-color: #272944;
+  --heading-color: #292922;
+}
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #363853;
+  --bg-color: #ffffff;
+  --heading-color: #818cab;
+}
+.body-container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height: 100%;
+}
