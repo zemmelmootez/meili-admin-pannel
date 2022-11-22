@@ -1,0 +1,26 @@
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+   
+}
+.navbar img{
+    width: 120px;
+}
+.navbar div{
+    display: flex;
+}
+
+.navRight{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navRight img{
+    width: 30px;
+}

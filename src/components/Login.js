@@ -1,6 +1,10 @@
 import React from 'react'
 import logo from '../meili.svg'
 import '../assets/Login.css'
+
+
+import { BrowserRouter,NavLink, Routes, Route } from "react-router-dom";
+import Aside from './Aside';
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 /*
@@ -10,7 +14,7 @@ if (currentTheme) {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
     }
-}*/
+*/
 
 function Login() {
   return (
@@ -27,7 +31,8 @@ function Login() {
             <input type={'email'} placeholder="enter your email"></input>
             <label>Password</label>
             <input type={'password'} placeholder="enter your password"></input>
-            <button type='submit' onClick={(e)=>{e.preventDefault()}}>Connect</button>
+         <NavLink to={'menu'} className="login-button">Login</NavLink>
+          
            
 
         </form>
